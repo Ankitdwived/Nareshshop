@@ -1,0 +1,12 @@
+<h1>Electronic  home</h1>
+<div class="d-flex flex-wrap">
+    <div  class="card m-2 p-2" style="width: 150px;" *ngFor="let item of electronic">
+        <img [src]="item.image" class="card-img-top" height="150">
+        <div class="header">
+            <p>{{item.price | currency}}</p>
+        </div>
+        <div class="card-footer">
+            <a class="btn btn-info w-100" routerLink="/details/{{item.id}}">details</a>
+        </div>
+    </div>
+</div>

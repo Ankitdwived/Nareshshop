@@ -1,0 +1,38 @@
+<h2>Product Detail</h2>
+<div class="row">
+
+    <div class="col-3">
+        <dl>
+            <dt>Product <title></title></dt>
+    <dd>{{Product.title}}</dd>
+    <dt>Name</dt>
+    <dd>{{Product.name}}</dd>
+    <dt>Price</dt>
+    <dd>{{Product.price}}</dd> 
+    <dt>Rating</dt>
+    <dd><span class="fa fa-star"></span>{{Product.rating.rate}} [{{Product.rating.count}}</dd>
+<dd>
+    <a routerLink="moredetail/{{Product.id}}" class="btn btn-success">more details</a>
+</dd>
+        </dl>
+        <div>
+            <a routerLink="/{{Product.category}}">Back to {{Product.category | titlecase}}</a>
+        </div>
+    </div>
+    <div class="col-9">
+<router-outlet></router-outlet>
+    </div>
+    </div>
+   <!-- <div class="col-3">
+        <img [src]="Product.image" width="50%" height="300">
+   <div class="mt-2">
+    <a class="btn btn-success ">description
+    </a>
+   </div>
+    </div>
+    <div class="col-2">
+<textarea rows="5" cols="40">{{Product.description}}</textarea>
+
+    </div>
+</div>
+-->

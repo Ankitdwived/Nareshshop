@@ -1,0 +1,32 @@
+<form #frmregister="ngForm" (ngSubmit)="RegisterClick(frmregister.value)">
+    <dl>
+        <dt>UserId</dt>
+        <dd><input type="text" name="userId" ngModel #userId="ngModel"> </dd>
+        <dt>User Name</dt>
+        <dd><input type="text" name="userName" ngModel #userName="ngModel"></dd>
+    <dt>Password</dt>
+    <dd><input type="password" name="Password" ngModel #Password="ngModel"></dd>
+    <dt>Email</dt>
+    <dd><input type="email" name="Email" ngModel #Email="ngModel"></dd>
+    <dt>Mobile</dt>
+    <dd><input type="text" name="mobile" ngModel #mobile="ngModel"></dd>
+    </dl>
+<button class="btn btn-primary">Register</button>
+</form>
+<!--<form #frmlogin="ngForm">
+    <h2>user Login</h2>
+    <dl>
+        <dt>User Name</dt>
+        <dd><input type="text" name="username" ngModel #username="ngModel"></dd>
+        <dt>Email</dt>
+        <dd><input type="email" name="email" ngModel #email="ngModel"></dd>
+      
+        <dt>Mobile</dt>
+        <dd><input type="text" name="mobile" ngModel #mobile="ngModel"></dd>
+      
+        <dt>Password</dt>
+        <dd><input type="password" name="password" ngModel #password="ngModel"></dd>
+
+    </dl>
+    <button class="btn btn-primary">Register</button>
+    </form>-->
